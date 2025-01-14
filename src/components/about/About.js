@@ -9,7 +9,7 @@ import nodejs_img from '../../img/NodeJs_logo.png'
 import html_img from '../../img/html logo.png'
 import js_img from '../../img/javascript logo.png'
 
-const About = () => {
+const About = ({isDarkMode}) => {
   const [images, setImages] = useState([
     react_img,
     angular_img,
@@ -20,7 +20,7 @@ const About = () => {
     html_img,
 ]);
   return (
-    <div id="about-container" className="flex-both-center">
+    <div id="about-container" className="flex-both-center" data-theme = {isDarkMode ? "dark" : "light"}>
       <div id="about-container2" className="fade-border flex-space-evenly">
         <div id="about-pic">
           <img src={aboutPic} alt="profile-pic" />

@@ -3,9 +3,9 @@ import './Home.css';
 import profileImg from '../../img/profile-pic.jpg';
 import resume from '../../img/Resume.pdf';
 
-const Home = () => {
+const Home = ({isDarkMode}) => {
   return (
-    <div id="front-container" className="flex-space-evenly">
+    <div id="front-container" className="flex-space-evenly" data-theme={isDarkMode}>
       <div id="profile-pic" className="fade-border">
         <img src={profileImg} alt="Profile" />
       </div>

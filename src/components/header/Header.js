@@ -1,17 +1,32 @@
 import "./Header.css"
+import 'boxicons/css/boxicons.min.css';
 import white_bright_icon from '../../img/brightness-low (1).png'
 import white_dark_icon from '../../img/moon.png'
 import black_bright_icon from '../../img/brightness-low.png'
 import black_dark_icon from '../../img/moon (1).png'
+import { useState } from "react"
 
-function Header() {
+function Header({isDarkMode, toggleTheme}) {
 
-    function Bright_dark_mode () {
-        
-    }
+    const [ToggleCircle, setToggleCircle] = useState("toggle_right");
+    const [toggle_left_img, setToggleLeftImg] = useState(black_bright_icon);
+    const [toggle_right_img, setToggleRightImg] = useState(white_dark_icon);
+
+    const toggle_btn = () => {
+        if (ToggleCircle === "toggle_right") {
+            setToggleCircle("toggle_left");
+            setToggleLeftImg(white_bright_icon); // Change left icon for light mode
+            setToggleRightImg(black_dark_icon); // Change right icon for light mode
+        } else {
+            setToggleCircle("toggle_right");
+            setToggleLeftImg(black_bright_icon); // Change left icon for dark mode
+            setToggleRightImg(white_dark_icon); // Change right icon for dark mode
+        }
+    };
+
     return (
         <header>
-            <div id="header-container" class="flex-space-between">
+            <div id="header-container" class="flex-space-between" data-theme={isDarkMode}>
                 <div id="left">
                     <a href="#front-container" class="text-deco-none"><p><span class="red">D</span>YNAMIC</p></a>
                 </div>
@@ -22,21 +37,22 @@ function Header() {
                         <li><a href="#project-container">Projects</a></li>
                         <li><a href="#contact-container">Contact</a></li>
                         <li>
-                            <div className="bright-dark-mode-btn">
-                                <div className="circle-container">
-                                    <div className="circle"></div>
+                            <button className="bright-dark-mode-btn" onClick={ ()=>{toggleTheme(); toggle_btn();}}>
+                                <div className={`circle-container`}>
+                                    <div className={`circle ${ToggleCircle}`}></div>
                                 </div>
                                 <div className="icon-container">
                                     <div className="bright-mode flex-both-center">
-                                        <img src={black_bright_icon} alt="image" />
+                                        <img src={toggle_left_img} alt="image" />
                                     </div>
                                     <div className="dark-mode flex-both-center">
-                                        <img src={white_dark_icon} alt="image" />
+                                        <img src={toggle_right_img} alt="image" />
                                     </div>
                                 </div>
-                            </div>
+                            </button>
                         </li>
                     </ul>
+                    <i class='bx bx-list-ul'></i>
                 </div>
             </div>
         </header>

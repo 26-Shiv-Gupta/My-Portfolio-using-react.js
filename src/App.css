@@ -29,7 +29,7 @@
 }
 .list-style-none li a{
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: var(--color);
 }
 .red{
   color: #FC5D6D;
@@ -45,7 +45,7 @@
 }
 .text-deco-none{
   text-decoration: none;
-  color:rgb(0, 0, 0);
+  color: var(--color);
 }
 body::-webkit-scrollbar {
   display: none;
@@ -53,14 +53,14 @@ body::-webkit-scrollbar {
 
 
 body{
-  background-color: black;
-  color: white;
+  background-color: var(--background-color);
+  color: var(--color);
 }
 .list-style-none li a{
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: var(--color);
 }
 .text-deco-none{
   text-decoration: none;
-  color:rgb(255, 255, 255);
+  color:var(--color);
 }

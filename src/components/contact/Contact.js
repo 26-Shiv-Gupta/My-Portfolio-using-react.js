@@ -1,9 +1,9 @@
 import React from 'react';
 import './Contact.css';
 
-function Contact() {
+function Contact({isDarkMode}) {
   return (
-    <div id="contact-container" className="flex-both-center">
+    <div id="contact-container" className="flex-both-center" data-theme = {isDarkMode ? "dark" : "light"}>
       <div id="contact-container2" className="fade-border flex-space-around">
         <div id="message-container" className="flex-both-center">
           <form

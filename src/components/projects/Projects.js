@@ -5,7 +5,7 @@ import stockMarketImg from '../../img/PROJECT STOCK MARKET.png';
 import ecommerceImg from '../../img/PROJECT ECOMMERCE WEBSITE.png';
 
 
-const Projects = () => {
+const Projects = ({isDarkMode}) => {
   const projectData = [
     {
       id: 'project1',
@@ -40,7 +40,7 @@ const Projects = () => {
   ];
 
   return (
-    <div id="project-container" className="flex-both-center">
+    <div id="project-container" className="flex-both-center" data-theme = {isDarkMode ? "dark" : "light"}>
       <div id="project-container2" className="fade-border">
         <p>Some of my works</p>
         <h1>PROJECTS</h1>

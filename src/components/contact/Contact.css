@@ -45,13 +45,14 @@
 #message-container #contact{
     width: 50%;
     display: inline-block;
+    margin-left: 5px;
 }
 #message-container button{
     padding: 10px 50px;
     border-radius: 20px;
     font-weight: bold;
     font-size: 15px;
-    color: black;
+    color: var(--background-color);
     cursor: pointer;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }

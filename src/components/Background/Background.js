@@ -11,7 +11,7 @@ import js_img from '../../img/javascript logo.png'
 // function loadImg () {
 
 // }
-const Background = () => {
+const Background = ({isDarkMode}) => {
     const [images, setImages] = useState([
         react_img,
         angular_img,
@@ -37,7 +37,7 @@ const Background = () => {
     }, []);
 
     return (
-        <div className="background">
+        <div className="background" data-theme = {isDarkMode ? "dark" : "light"}>
             <div className="background-layer"></div>
             <div className="background-container">
                 {images.map((image, index) => (
