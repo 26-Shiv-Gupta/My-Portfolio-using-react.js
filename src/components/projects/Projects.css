@@ -23,12 +23,15 @@
     flex-wrap: wrap;
 }
 #project-list .project{
-    height: 400px;
+    height: 300px;
     margin: 0 15px 70px 0;
     width: 30%;
     min-width: 270px;
     position: relative;
     cursor: pointer;
+    background-color: var(--input-color);
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px -3px var(--color);
 }
 .project input{
     position: absolute;
@@ -36,22 +39,20 @@
     right: 2%;
     display: none;
 }
-#project-list .project img{
+/* #project-list .project img{
     width: 100%;
     height: 75%;
     border-radius: 10px;
     margin-bottom: 5px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+} */
+.project .project-about{    
+    height: 100%;
+    margin: 20px;
+
 }
-.project .project-about{
-    width: 100%;
-    height: 25%;
-    background-color: rgb(234, 234, 234);
-    border-radius: 5px;
-    padding: 5px;
-}
-.project .project-about h5{
-    color: rgb(71, 68, 68);
+.project .project-about h4{
+    color: rgb(75, 72, 72);
 }
 @media (max-width: 1360px){
     #project-container2 #project-list{
@@ -98,4 +99,31 @@
 }
 .project:hover .project-hover-content a{
     opacity: 1;
+}
+.project-top{
+    display: flex;
+    justify-content: space-between;
+    font-size: 40px;
+    height: 15%;
+}
+.github-demo{
+    font-size: 25px;
+}
+.github-demo i{
+    margin-left: 10px;
+    color: var(--color);
+}
+.project-title{
+    margin: 10px 0;
+}
+.project-tech-stack{
+    height: 10%;
+    width: 100%;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+}
+.project:hover {
+    position: absolute;
+    bottom: 15px;
 }

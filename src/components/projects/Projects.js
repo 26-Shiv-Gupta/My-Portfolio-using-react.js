@@ -3,6 +3,9 @@ import './Projects.css';
 import snakeGameImg from '../../img/PROJECT SNAKE GAME.png';
 import stockMarketImg from '../../img/PROJECT STOCK MARKET.png';
 import ecommerceImg from '../../img/PROJECT ECOMMERCE WEBSITE.png';
+import folderImg from '../../img/folder.png'
+import linkImg from '../../img/link.png'
+import githubImg from '../../img/github.png'
 
 
 const Projects = ({isDarkMode}) => {
@@ -19,7 +22,7 @@ const Projects = ({isDarkMode}) => {
     },
     {
       id: 'project2',
-      tech: 'Python & LSTM',
+      tech: 'Python, LSTM',
       date: 'April 2023 - June 2023',
       github: 'https://github.com/26-Shiv-Gupta/Stock_Market_analysis_and_prediction',
       imgSrc: stockMarketImg,
@@ -47,7 +50,7 @@ const Projects = ({isDarkMode}) => {
         <div id="project-list" className="flex-space-evenly">
           {projectData.map((project) => (
             <div key={project.id} id={project.id} className="project">
-              <div className="project-hover-content flex-both-center">
+              {/* <div className="project-hover-content flex-both-center">
                 <h5>
                   Technology used: {project.tech} <br />
                   {project.date}
@@ -60,12 +63,28 @@ const Projects = ({isDarkMode}) => {
                 >
                   GitHub
                 </a>
-              </div>
-              <input type="button" value="know more" className="project-know-more" />
-              <img src={project.imgSrc} alt={`${project.title} image`} />
+              </div> */}
+              {/* <input type="button" value="know more" className="project-know-more" /> */}
+              {/* <img src={project.imgSrc} alt={`${project.title} image`} /> */}
               <div className="project-about">
-                <h3 className="red">{project.title}</h3>
-                <h5>{project.description}</h5>
+                {/* <h3 className="red">{project.title}</h3>
+                <h5>{project.description}</h5> */}
+                <div className='project-top'>
+                  <a href='{}'> <i class='bx bx-folder red' ></i> </a>
+                  <div className='github-demo'>
+                    <a><i class='bx bx-link-external' ></i></a>
+                    <a href={project.github}><i class='bx bxl-github'></i></a>
+                  </div>
+                </div>
+                <div className='project-title'>
+                  <h3>{project.title}</h3>
+                </div>
+                <div className='project-desc'>
+                  <h4>{project.description}</h4>
+                </div>
+                <div className='project-tech-stack'>
+                  <h6>{project.tech}</h6>
+                </div>
               </div>
             </div>
           ))}

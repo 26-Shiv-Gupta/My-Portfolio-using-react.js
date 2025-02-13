@@ -23,6 +23,7 @@ code {
   --background-color: #000000;
   --background-layer-color : rgba(0, 0, 0, 0.5);
   --background-header-color : rgba(0, 0, 0, 0.9);
+  --input-color: rgba(30, 30, 30, 0.9);
   --color: #ffffff;
 }
 
@@ -30,5 +31,6 @@ code {
   --background-color: #ffffff;
   --background-layer-color : rgba(255, 255, 255, 0.3);
   --background-header-color : rgba(255, 255, 255, 0.9);
+  --input-color: rgba(232, 232, 232, 0.9);
   --color: #000000;
 }
