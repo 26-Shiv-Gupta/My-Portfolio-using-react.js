@@ -70,9 +70,10 @@ function Contact({isDarkMode}) {
             Thank You, have a nice day to you.
           </h4>
           <a
-            href="#"
+            href="#none"
             className="text-deco-none"
             aria-label='Instagram'
+            onClick={(e) => e.preventDefault()}
           >
             <i className="bx bxl-instagram-alt"></i>
             <span>Instagram</span>
@@ -101,9 +102,10 @@ function Contact({isDarkMode}) {
           </a>
           <br />
           <a
-            href="#"
+            href="#none"
             className="text-deco-none"
             aria-label='email'
+            onClick={(e) => e.preventDefault()}
           >
             <i className="bx bxl-gmail"></i>
             <span>gedashiv9977@gmail.com</span>

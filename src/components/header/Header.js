@@ -49,10 +49,10 @@ function Header({ isDarkMode, toggleTheme }) {
                         </div>
                         <div className="icon-container">
                             <div className="bright-mode flex-both-center">
-                                <img src={toggle_left_img} alt="image" />
+                                <img src={toggle_left_img} alt="image1" />
                             </div>
                             <div className="dark-mode flex-both-center">
-                                <img src={toggle_right_img} alt="image" />
+                                <img src={toggle_right_img} alt="image2" />
                             </div>
                         </div>
                     </button>
@@ -61,7 +61,7 @@ function Header({ isDarkMode, toggleTheme }) {
                     <div className={`${blur_screen}`} onClick={slide_bar_close}></div>
                     <ul class={`${slider_class} flex-both-center list-style-none`} id="header-ul">
                         <li><a href="#about-container" aria-label='About'>About</a></li>
-                        <li><a href="#"><span class="grey" aria-label='Experience'>Experience</span></a></li>
+                        <li><a href="#experience" onClick={(e) => e.preventDefault()} aria-label='Experience'><span class="grey">Experience</span></a></li>
                         <li><a href="#project-container" aria-label='Project'>Projects</a></li>
                         <li><a href="#contact-container" aria-label='Contact'>Contact</a></li>
                     </ul>
