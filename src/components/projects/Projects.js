@@ -43,9 +43,9 @@ const Projects = ({isDarkMode}) => {
             <div key={project.id} id={project.id} className="project">
               <div className="project-about">
                 <div className='project-top'>
-                  <a href='#'> <i class='bx bx-folder red' ></i> </a>
+                  <i class='bx bx-folder red' ></i>
                   <div className='github-demo'>
-                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                    <a href={project.github}><i class='bx bx-link-external' ></i></a>
                     <a href={project.github}><i class='bx bxl-github'></i></a>
                   </div>
                 </div>
