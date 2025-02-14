@@ -70,7 +70,7 @@ function Contact({isDarkMode}) {
             Thank You, have a nice day to you.
           </h4>
           <a
-            href="javascript:void(0)"
+            href="#"
             className="text-deco-none"
           >
             <i className="bx bxl-instagram-alt"></i>
@@ -98,7 +98,7 @@ function Contact({isDarkMode}) {
           </a>
           <br />
           <a
-            href="javascript:void(0)"
+            href="#"
             className="text-deco-none"
           >
             <i className="bx bxl-gmail"></i>

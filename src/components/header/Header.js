@@ -61,7 +61,7 @@ function Header({ isDarkMode, toggleTheme }) {
                     <div className={`${blur_screen}`} onClick={slide_bar_close}></div>
                     <ul class={`${slider_class} flex-both-center list-style-none`} id="header-ul">
                         <li><a href="#about-container">About</a></li>
-                        <li><a href="javascript:void(0);"><span class="grey">Experience</span></a></li>
+                        <li><a href="#"><span class="grey">Experience</span></a></li>
                         <li><a href="#project-container">Projects</a></li>
                         <li><a href="#contact-container">Contact</a></li>
                     </ul>

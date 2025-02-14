@@ -10,7 +10,7 @@ import html_img from '../../img/html logo.png'
 import js_img from '../../img/javascript logo.png'
 
 const About = ({isDarkMode}) => {
-  const [images, setImages] = useState([
+  const [images] = useState([
     react_img,
     angular_img,
     bootstrap_img,
