@@ -40,7 +40,7 @@ function Header({ isDarkMode, toggleTheme }) {
         <header>
             <div id="header-container" class="flex-space-between" data-theme={isDarkMode}>
                 <div id="left">
-                    <a href="#front-containefr" class="text-deco-none"><p><span class="red">D</span>YNAMIC</p></a>
+                    <a href="#front-containefr" class="text-deco-none" aria-label='D'><p><span class="red">D</span>YNAMIC</p></a>
                 </div>
                 <div class='toggle-btn-container'>
                     <button className="bright-dark-mode-btn" onClick={() => { toggleTheme(); toggle_btn(); }}>
@@ -60,10 +60,10 @@ function Header({ isDarkMode, toggleTheme }) {
                 <div id="right">
                     <div className={`${blur_screen}`} onClick={slide_bar_close}></div>
                     <ul class={`${slider_class} flex-both-center list-style-none`} id="header-ul">
-                        <li><a href="#about-container">About</a></li>
-                        <li><a href="#"><span class="grey">Experience</span></a></li>
-                        <li><a href="#project-container">Projects</a></li>
-                        <li><a href="#contact-container">Contact</a></li>
+                        <li><a href="#about-container" aria-label='About'>About</a></li>
+                        <li><a href="#"><span class="grey" aria-label='Experience'>Experience</span></a></li>
+                        <li><a href="#project-container" aria-label='Project'>Projects</a></li>
+                        <li><a href="#contact-container" aria-label='Contact'>Contact</a></li>
                     </ul>
                     <i class='bx bx-list-ul' onClick={toggle_header_slider}></i>
                 </div>

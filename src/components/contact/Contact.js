@@ -72,6 +72,7 @@ function Contact({isDarkMode}) {
           <a
             href="#"
             className="text-deco-none"
+            aria-label='Instagram'
           >
             <i className="bx bxl-instagram-alt"></i>
             <span>Instagram</span>
@@ -82,6 +83,7 @@ function Contact({isDarkMode}) {
             className="text-deco-none"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label='Linkedin'
           >
             <i className="bx bxl-linkedin-square"></i>
             <span>LinkedIn</span>
@@ -92,6 +94,7 @@ function Contact({isDarkMode}) {
             className="text-deco-none"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label='Github'
           >
             <i className="bx bxl-github"></i>
             <span>GitHub</span>
@@ -100,6 +103,7 @@ function Contact({isDarkMode}) {
           <a
             href="#"
             className="text-deco-none"
+            aria-label='email'
           >
             <i className="bx bxl-gmail"></i>
             <span>gedashiv9977@gmail.com</span>
