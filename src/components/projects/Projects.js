@@ -43,10 +43,10 @@ const Projects = ({isDarkMode}) => {
             <div key={project.id} id={project.id} className="project">
               <div className="project-about">
                 <div className='project-top'>
-                  <i class='bx bx-folder red' ></i>
+                <span aria-hidden="true"><i className="bx bx-folder red"></i></span>
                   <div className='github-demo'>
-                    <a href={project.github}><i class='bx bx-link-external' ></i></a>
-                    <a href={project.github}><i class='bx bxl-github'></i></a>
+                    <a href={project.github} aria-label='project-demo'><i class='bx bx-link-external' ></i></a>
+                    <a href={project.github} aria-label='github-Repo'><i class='bx bxl-github'></i></a>
                   </div>
                 </div>
                 <div className='project-title'>
