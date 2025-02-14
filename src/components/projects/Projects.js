@@ -18,7 +18,7 @@ const Projects = ({isDarkMode}) => {
       tech: 'Python, LSTM',
       date: 'April 2023 - June 2023',
       github: 'https://github.com/26-Shiv-Gupta/Stock_Market_analysis_and_prediction',
-      title: 'STOCK MARKET ANALYSIS AND PREDICTION',
+      title: 'Coding Performance Hub',
       description:
         'Implemented a Stock Market Analysis and Prediction tool utilizing Python, LSTM neural networks and financial data from Yahoo Finance. Developed for data preprocessing, model training, visualizing predictions.',
     },
