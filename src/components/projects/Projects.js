@@ -6,30 +6,27 @@ const Projects = ({isDarkMode}) => {
   const projectData = [
     {
       id: 'project1',
-      tech: 'C++',
-      date: 'December 2023',
-      github: 'https://github.com/26-Shiv-Gupta/Snake-Game',
-      title: 'SNAKE GAME',
+      tech: 'HTML, CSS, JS, React',
+      github: 'https://github.com/26-Shiv-Gupta/Ecommerce-Website',
+      title: 'Dynamic Learning Platform',
       description:
-        'My Snake game project, written in C++, offers a classic gaming experience where players control a snake to collect food and grow in size.',
+        'Developed a dynamic educational web application using React with a function-component-based architecture, improving scalability and reducing development time by 20%. Implemented responsive design and React hooks, ensuring accessibility across all devices and enhancing user interaction.',
     },
     {
       id: 'project2',
-      tech: 'Python, LSTM',
-      date: 'April 2023 - June 2023',
-      github: 'https://github.com/26-Shiv-Gupta/Stock_Market_analysis_and_prediction',
+      tech: 'React, NodeJs, express, MongoDB',
+      github: 'https://github.com/26-Shiv-Gupta/Codeforces-Dashboard',
       title: 'Coding Performance Hub',
       description:
-        'Implemented a Stock Market Analysis and Prediction tool utilizing Python, LSTM neural networks and financial data from Yahoo Finance. Developed for data preprocessing, model training, visualizing predictions.',
+        'Developed an interactive dashboard to aggregate and visualize Codeforces data, optimizing performance by 30% through backend integration. Enhanced data accuracy and user engagement by 25% with graphical insights, ensuring scalability for future platform integrations.',
     },
     {
       id: 'project3',
-      tech: 'HTML, CSS, JS',
-      date: 'Oct 2023 - Nov 2023',
-      github: 'https://github.com/26-Shiv-Gupta/Ecommerce-Website',
-      title: 'ECOMMERCE WEBSITE',
+      tech: 'HTML, CSS, JS, React',
+      github: 'https://26-shiv-gupta.github.io/Ecommerce-Website/index.html',
+      title: 'Interactive Shopping Website',
       description:
-        'Developed a dynamic eCommerce website using HTML, CSS, and JavaScript, ensuring a seamless user interface and responsive design.',
+        'Developed a user-friendly eCommerce platform with seamless navigation and interactive features, boosting user productivity by 30%. Optimized performance and responsiveness, ensuring accessibility across all devices for an enhanced shopping experience.',
     },
   ];
 
@@ -56,7 +53,7 @@ const Projects = ({isDarkMode}) => {
                   <h4>{project.description}</h4>
                 </div>
                 <div className='project-tech-stack'>
-                  <h6>{project.tech}</h6>
+                  <h5>{project.tech}</h5>
                 </div>
               </div>
             </div>
