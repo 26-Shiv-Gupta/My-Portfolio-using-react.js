@@ -2,20 +2,16 @@ import React, {useState} from 'react';
 import './About.css';
 import aboutPic from '../../img/about-pic.jpg';
 import react_img from '../../img/React_logo.png'
-import angular_img from '../../img/Angular logo.png'
 import bootstrap_img from '../../img/Bootstrap logo.png'
 import css_img from '../../img/CSS logo.png'
-import nodejs_img from '../../img/NodeJs_logo.png'
 import html_img from '../../img/html logo.png'
 import js_img from '../../img/javascript logo.png'
 
 const About = ({isDarkMode}) => {
   const [images] = useState([
     react_img,
-    angular_img,
     bootstrap_img,
     css_img,
-    nodejs_img,
     js_img,
     html_img,
 ]);
